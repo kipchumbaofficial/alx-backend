@@ -16,6 +16,8 @@ class LFUCache(BaseCaching):
         self.min_freq = 0
 
     def _update_frequency(self, key):
+        """Updates frequency
+        """
         freq = self.key_freq[key]
 
         # Remove the key from the old frequency list
